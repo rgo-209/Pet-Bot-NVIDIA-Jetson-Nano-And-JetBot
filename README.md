@@ -37,8 +37,8 @@ allows it to run on battery power as well.
 The kit can be purchased 
 [here](https://www.waveshare.com/wiki/JetBot_AI_Kit).
 
-<img src="https://m.media-amazon.com/images/I/61GVd95+FAL._AC_SL1000_.jpg" width="40%">
-<img src="https://m.media-amazon.com/images/I/710Cq03jZzL._AC_SL1000_.jpg" width="45.5%">
+<img src="https://m.media-amazon.com/images/I/61GVd95+FAL._AC_SL1000_.jpg" width="30%">
+<img src="https://m.media-amazon.com/images/I/710Cq03jZzL._AC_SL1000_.jpg" width="34%">
 
 Follow the instructions on the website on how to 
 get started with the bot.
@@ -79,15 +79,20 @@ bounding box of the target human with the view.
 Once the bot has the target human, it finds it’s 
 center(x,y) by using the bounding boxes and checks 
 whether the x value is between the range of 600 and 680.
+ 
+   * If the x value is less than 600, the robot moves
+   towards left with:
+
+         speed = 0.5 of max speed of robot for
+
+         time = 0.5 × (600−x)/600 milliseconds
    
-      * If the x value is less than 600, the robot moves towards left with:
-speed = 0.5 of max speed of robot for
-time = 0.5 × (600−x)/600 milliseconds
-   
-      * If the x value is more than 680, 
-the robot moves towards right with:
-speed = 0.5 of max speed of robot for
-time = 0.5 × (x−680)/680 milliseconds
+   * If the x value is more than 680, the robot moves 
+    towards right with:
+
+         speed = 0.5 of max speed of robot for
+
+         time = 0.5 × (x−680)/680 milliseconds
 
 
 3. **Move forward or backwards:**
