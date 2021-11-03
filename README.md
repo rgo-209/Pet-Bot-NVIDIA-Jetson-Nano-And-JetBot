@@ -37,8 +37,8 @@ allows it to run on battery power as well.
 The kit can be purchased 
 [here](https://www.waveshare.com/wiki/JetBot_AI_Kit).
 
-<img src="https://m.media-amazon.com/images/I/61GVd95+FAL._AC_SL1000_.jpg" width="45%">
-<img src="https://m.media-amazon.com/images/I/710Cq03jZzL._AC_SL1000_.jpg" width="51.4%">
+<img src="https://m.media-amazon.com/images/I/61GVd95+FAL._AC_SL1000_.jpg" width="40%">
+<img src="https://m.media-amazon.com/images/I/710Cq03jZzL._AC_SL1000_.jpg" width="45.5%">
 
 Follow the instructions on the website on how to 
 get started with the bot.
